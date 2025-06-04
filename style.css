@@ -1,16 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Noto Sans TC", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.8;
     color: #333;
-    background-color: #fafafa;
+    background-color: #f9f9f9;
 }
 
 header {
-    background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg, #2d3e50, #4b79a1);
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -43,52 +47,49 @@ nav a:hover {
 
 main {
     padding: 2rem;
-    max-width: 960px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
-.hero {
-    background: linear-gradient(90deg, #8e2de2, #4a00e0);
-    color: #fff;
-    padding: 3rem 2rem;
-    text-align: center;
-    border-radius: 4px;
+section {
     margin-bottom: 2rem;
+}
+
+.hero {
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.5rem;
 }
 
 .hero h2 {
     margin: 0 0 1rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
 
-.gallery img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
 .company-info {
     border-collapse: collapse;
     width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .company-info th,
 .company-info td {
     border: 1px solid #ddd;
-    padding: 0.5rem;
+    padding: 0.75rem 1rem;
 }
 
 .company-info th {
-    background-color: #f2f2f2;
+    background-color: #f7f7f7;
     text-align: left;
+    font-weight: 600;
 }
 
 footer {
